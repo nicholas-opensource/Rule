@@ -41,6 +41,8 @@ DOMAIN-SUFFIX,a1.mzstatic.com,Direct
 DOMAIN-SUFFIX,a2.mzstatic.com,Direct
 DOMAIN-SUFFIX,a5.mzstatic.com,Direct
 DOMAIN-SUFFIX,a4.mzstatic.com,Direct
+DOMAIN-SUFFIX,akadns.net,Direct
+DOMAIN-SUFFIX,akamaiedge.net,Direct
 DOMAIN-SUFFIX,api.push.apple.com,Direct
 DOMAIN-SUFFIX,16-courier.push.apple.com,Direct
 DOMAIN-SUFFIX,appldnld.apple.com,Direct
@@ -100,6 +102,7 @@ DOMAIN-SUFFIX,is4-ssl.mzstatic.com,Direct
 DOMAIN-SUFFIX,is4.mzstatic.com,Direct
 DOMAIN-SUFFIX,is5-ssl.mzstatic.com,Direct
 DOMAIN-SUFFIX,is5.mzstatic.com,Direct
+DOMAIN-SUFFIX,ls.apple.com,Direct
 DOMAIN-SUFFIX,mesu.apple.com,Direct
 DOMAIN-SUFFIX,itunesconnect.apple.com,Direct
 DOMAIN-SUFFIX,itunes.apple.com,Direct
