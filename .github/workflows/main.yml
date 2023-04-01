@@ -1,0 +1,59 @@
+name: Rules-Build
+
+on:
+  schedule:
+    - cron: '20 16 * * *'
+
+  push:
+    branches: 
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    #if: github.event.repository.owner.id == github.event.sender.id
+
+    steps:
+    - name: Clone Repository
+      uses: actions/checkout@main
+    - name: Show CPU Model
+      run: |
+        echo -e "Total CPU cores\t: $(nproc)"
+        cat /proc/cpuinfo | grep 'model name'
+        ulimit -a
+    - name: Prepared
+      run: |
+        pip3 install requests
+    - name: Build
+      run: |
+        sudo chown -R runner:runner /home/runner/work/Rule
+        python3 ./run.py
+        export CURRENT_DATE="$(date +%Y.%m.%d)"
+        echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_ENV
+    - name: Release
+      uses: ncipollo/release-action@v1.8.0
+      with:
+        name: Rocket Release
+        allowUpdates: true
+        replacesArtifacts: true
+        commit: ${{ env.CURRENT_BRANCH }}
+        tag: ${{ env.CURRENT_DATE }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        artifacts: ./Rocket.conf
+
+    - name: Cleanup Workflow Logs
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        token: ${{ github.token }}
+        repository: ${{ github.repository }}
+        retain_days: 2
+
+    - name: Delete Old Release
+      if: steps.hash.outputs.REBUILD_TOOLCHAIN == 'true'
+      uses: mknejp/delete-release-assets@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag: ${{ env.DEVICE_TARGET }}-${{ env.DEVICE_SUBTARGET }}
+        fail-if-no-assets: false
+        fail-if-no-release: false
+        assets: "*"
