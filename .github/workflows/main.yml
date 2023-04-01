@@ -2,7 +2,7 @@ name: Rules-Build
 
 on:
   schedule:
-    - cron: '20 16 * * *'
+    - cron: '15 16 * * *'
 
   push:
     branches: 
@@ -28,7 +28,7 @@ jobs:
       run: |
         sudo chown -R runner:runner /home/runner/work/Rule
         python3 ./run.py
-        export CURRENT_DATE="$(date +%Y.%m.%d)"
+        export CURRENT_DATE="$(date -d "+1 day" "+%Y.%m.%d")"
         echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_ENV
     - name: Release
       uses: ncipollo/release-action@v1.8.0
