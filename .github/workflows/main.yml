@@ -48,23 +48,10 @@ jobs:
     - name: Delete Older Releases
       uses: dev-drprasad/delete-older-releases@master
       with:
-        keep_latest: 3
+        keep_latest: 1
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  Cleanup-Old-Artifacts:
-    runs-on: ubuntu-20.04
-    #if: github.event.repository.owner.id == github.event.sender.id
-    steps:
-    - name: Cleanup Old Action Artifacts
-      uses: heidi-pay/gha-delete-artifacts@main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        days: 3
-        max-artifacts-to-delete: 6
-        dry-run: no
         
   Cleanup-Workflow-Logs:
     runs-on: ubuntu-20.04
@@ -75,4 +62,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
-          retain_days: 2
+          retain_days: 1
