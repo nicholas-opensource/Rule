@@ -212,4 +212,6 @@ DOMAIN-SUFFIX,ytimg.com,Proxy
 # Zoom
 DOMAIN-SUFFIX,zoom.us,Direct
 DOMAIN-SUFFIX,zoom.com,Direct
+# Others
+DOMAIN-SUFFIX,tbcdn.com,Direct
 
