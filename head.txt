@@ -214,4 +214,5 @@ DOMAIN-SUFFIX,zoom.us,Direct
 DOMAIN-SUFFIX,zoom.com,Direct
 # Others
 DOMAIN-SUFFIX,tbcdn.com,Direct
+DOMAIN-SUFFIX,doubleclick.net,Proxy
 
