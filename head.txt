@@ -14,7 +14,6 @@ DOMAIN-KEYWORD,adsage,Reject
 DOMAIN-KEYWORD,adsmogo,Reject
 DOMAIN-KEYWORD,adsrvmedia,Reject
 DOMAIN-KEYWORD,adwords,Reject
-DOMAIN-KEYWORD,adservice,Reject
 DOMAIN-SUFFIX,appsflyer.com,Reject
 DOMAIN-KEYWORD,domob,Reject
 DOMAIN-SUFFIX,doubleclick.net,Reject
