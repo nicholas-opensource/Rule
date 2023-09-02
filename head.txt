@@ -16,7 +16,6 @@ DOMAIN-KEYWORD,adsrvmedia,Reject
 DOMAIN-KEYWORD,adwords,Reject
 DOMAIN-SUFFIX,appsflyer.com,Reject
 DOMAIN-KEYWORD,domob,Reject
-DOMAIN-SUFFIX,doubleclick.net,Reject
 DOMAIN-KEYWORD,duomeng,Reject
 DOMAIN-KEYWORD,dwtrack,Reject
 DOMAIN-KEYWORD,guanggao,Reject
