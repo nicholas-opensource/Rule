@@ -175,6 +175,28 @@ DOMAIN-SUFFIX,nflxvideo.net,Proxy
 DOMAIN-SUFFIX,github.com,Proxy
 DOMAIN-SUFFIX,github.io,Proxy
 DOMAIN-SUFFIX,raw.githubusercontent.com,Proxy
+# Microsoft Co-Pilot
+DOMAIN-SUFFIX,www.bing.com,Proxy
+DOMAIN-SUFFIX,th.bing.com,Proxy
+DOMAIN-SUFFIX,www.bingapis.com,Proxy
+DOMAIN-SUFFIX,sapphire.api.microsoftapp.net,Proxy
+DOMAIN-SUFFIX,c.bing.com,Proxy
+DOMAIN-SUFFIX,sydney.bing.com,Proxy
+DOMAIN-SUFFIX,www.clarity.ms,Proxy
+DOMAIN-SUFFIX,p.clarity.ms,Proxy
+DOMAIN-SUFFIX,dealczars.bing-shopping.microsoft-falcon.io,Proxy
+DOMAIN-SUFFIX,shopping.bing-shopping.microsoft-falcon.io,Proxy
+DOMAIN-SUFFIX,logincdn.msauth.net,Proxy
+DOMAIN-SUFFIX,account.live.com,Proxy
+DOMAIN-SUFFIX,acctcdn.msauth.net,Proxy
+DOMAIN-SUFFIX,odc.officeapps.live.com,Proxy
+DOMAIN-SUFFIX,substrate.office.com,Proxy
+DOMAIN-SUFFIX,ssl.bing.com,Proxy
+DOMAIN-SUFFIX,services.bingapis.com,Proxy
+DOMAIN-SUFFIX,location.microsoft.com,Proxy
+DOMAIN-SUFFIX,api.msn.com,Proxy
+DOMAIN-SUFFIX,self.events.data.microsoft.com,Proxy
+DOMAIN-SUFFIX,login.microsoftonline.com,Proxy
 # Spotify
 DOMAIN-SUFFIX,adeventtracker.spotify.com,Reject
 DOMAIN-SUFFIX,weblb-wg.gslb.spotify.com,Reject
