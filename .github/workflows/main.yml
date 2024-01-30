@@ -31,7 +31,7 @@ jobs:
         export CURRENT_DATE="$(date -d "+1 day" "+%Y.%m.%d")"
         echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_ENV
     - name: Release
-      uses: ncipollo/release-action@v1.8.0
+      uses: ncipollo/release-action@v1.13.0
       with:
         name: Rocket Release
         allowUpdates: true
