@@ -2,6 +2,7 @@ import os
 import requests
 
 ip_url = 'https://raw.githubusercontent.com/QiuSimons/Chnroute/master/dist/chnroute/chnroute.txt'
+ip6_url = 'https://raw.githubusercontent.com/QiuSimons/Chnroute/master/dist/chnroute/chnroute-v6.txt'
 list_url = 'https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt'
 
 def getChnroute(ip_url):
@@ -18,6 +19,25 @@ def getChnroute(ip_url):
             if not line.startswith('17.'):
                 new_line = 'IP-CIDR,' + line + ',Direct,no-resolve'
                 new_lines.append(new_line)
+        del new_lines[-1]
+        new_lines.append('\n')
+
+        with open('./head.txt', 'a', encoding='utf-8') as f:
+            f.write('\n'.join(new_lines))
+
+def getChnroute6(ip6_url):
+    try:
+        response = requests.get(ip6_url, timeout=5)
+    except requests.exceptions.Timeout:
+        print("IP Time Out!!!")
+    else:
+        data = response.text
+        lines = data.split('\n')
+        new_lines = []
+
+        for line in lines:
+            new_line = 'IP-CIDR,' + line + ',Direct,no-resolve'
+            new_lines.append(new_line)
         del new_lines[-1]
         new_lines.append('\n')
 
@@ -56,4 +76,5 @@ def merge():
 
 getChnlist(list_url)
 getChnroute(ip_url)
+getChnroute6(ip6_url)
 merge()
