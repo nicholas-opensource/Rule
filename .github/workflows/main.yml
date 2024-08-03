@@ -23,7 +23,7 @@ jobs:
         ulimit -a
     - name: Prepared
       run: |
-        pip3 install requests
+        pip3 install requests --break-system-packages
     - name: Build
       run: |
         sudo chown -R runner:runner /home/runner/work/Rule
