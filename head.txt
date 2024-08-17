@@ -201,6 +201,7 @@ DOMAIN,www.bing.com,Proxy
 DOMAIN-SUFFIX,algolia.net,Proxy
 DOMAIN-SUFFIX,api.microsoftapp.net,Proxy
 DOMAIN-SUFFIX,auth0.com,Proxy
+DOMAIN-SUFFIX,bat.bing.com,Proxy
 DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io,Proxy
 DOMAIN-SUFFIX,challenges.cloudflare.com,Proxy
 DOMAIN-SUFFIX,chatgpt.com,Proxy
@@ -214,6 +215,7 @@ DOMAIN-SUFFIX,identrust.com,Proxy
 DOMAIN-SUFFIX,intercom.io,Proxy
 DOMAIN-SUFFIX,intercomcdn.com,Proxy
 DOMAIN-SUFFIX,launchdarkly.com,Proxy
+DOMAIN-SUFFIX,llogin.microsoftonline.com,Proxy
 DOMAIN-SUFFIX,oaistatic.com,Proxy
 DOMAIN-SUFFIX,oaiusercontent.com,Proxy
 DOMAIN-SUFFIX,observeit.net,Proxy
@@ -225,6 +227,7 @@ DOMAIN-SUFFIX,sentry.io,Proxy
 DOMAIN-SUFFIX,stripe.com,Proxy
 DOMAIN-SUFFIX,turn.livekit.cloud,Proxy
 DOMAIN-KEYWORD,openaicom-api,Proxy
+DOMAIN-SUFFIX,www.bingapis.com,Proxy
 # Spotify
 DOMAIN-SUFFIX,adeventtracker.spotify.com,Reject
 DOMAIN-SUFFIX,weblb-wg.gslb.spotify.com,Reject
@@ -265,6 +268,7 @@ DOMAIN-SUFFIX,zoom.com,Direct
 # Others
 DOMAIN-SUFFIX,tbcdn.com,Direct
 DOMAIN-SUFFIX,doubleclick.net,Proxy
+DOMAIN-SUFFIX,pixel.everesttech.net,Direct
 DOMAIN-SUFFIX,mypikpak.com,Proxy
 DOMAIN-SUFFIX,pikpak.me,Proxy
 DOMAIN-SUFFIX,pikpakdrive.com,Proxy
