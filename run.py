@@ -76,5 +76,5 @@ def merge():
 
 getChnlist(list_url)
 getChnroute(ip_url)
-getChnroute6(ip6_url)
+#getChnroute6(ip6_url)
 merge()
