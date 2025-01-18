@@ -18,6 +18,8 @@ DOMAIN-SUFFIX,appsflyer.com,Reject
 DOMAIN-KEYWORD,domob,Reject
 DOMAIN-KEYWORD,duomeng,Reject
 DOMAIN-KEYWORD,dwtrack,Reject
+DOMAIN-SUFFIX,graph.instagram.com,Reject
+DOMAIN-SUFFIX,graph-fallback.instagram.com,Reject
 DOMAIN-KEYWORD,guanggao,Reject
 DOMAIN-KEYWORD,lianmeng,Reject
 DOMAIN-SUFFIX,mmstat.com,Reject
